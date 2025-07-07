@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (resetFilterBtn) {
         resetFilterBtn.addEventListener('click', function() {
-            filterCheckboxes.forEach(checkbox => checkbox.checked = false);
+            filterCheckboxes.forEach(checkbox => checkbox.checked = true);
             if (priceRange) priceRange.value = priceRange.max;
             filterProducts();
         });

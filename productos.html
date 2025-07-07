@@ -118,39 +118,33 @@
                                     <div id="collapseCategory" class="accordion-collapse collapse show" aria-labelledby="headingCategory" data-bs-parent="#filterAccordion">
                                         <div class="accordion-body">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="catProcessors" checked>
-                                                <label class="form-check-label" for="catProcessors">
+                                                <input class="form-check-input" type="checkbox" value="" id="catProcesadores" checked>
+                                                <label class="form-check-label" for="catProcesadores">
                                                     Procesadores
                                                 </label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="catGraphicsCards" checked>
-                                                <label class="form-check-label" for="catGraphicsCards">
+                                                <input class="form-check-input" type="checkbox" value="" id="catTarjetas-graficas" checked>
+                                                <label class="form-check-label" for="catTarjetas-graficas">
                                                     Tarjetas Gráficas
                                                 </label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="catMotherboards" checked>
-                                                <label class="form-check-label" for="catMotherboards">
+                                                <input class="form-check-input" type="checkbox" value="" id="catPlacas-base" checked>
+                                                <label class="form-check-label" for="catPlacas-base">
                                                     Placas Base
                                                 </label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="catRAM" checked>
-                                                <label class="form-check-label" for="catRAM">
+                                                <input class="form-check-input" type="checkbox" value="" id="catMemoria-ram" checked>
+                                                <label class="form-check-label" for="catMemoria-ram">
                                                     Memoria RAM
                                                 </label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="catStorage" checked>
-                                                <label class="form-check-label" for="catStorage">
+                                                <input class="form-check-input" type="checkbox" value="" id="catAlmacenamiento" checked>
+                                                <label class="form-check-label" for="catAlmacenamiento">
                                                     Almacenamiento
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="catPSU" checked>
-                                                <label class="form-check-label" for="catPSU">
-                                                    Fuentes de Poder
                                                 </label>
                                             </div>
                                         </div>
@@ -243,12 +237,11 @@
                         </div>
                         
                         <!-- Seccion de procesador -->
-                         <div class="product-card" data-category="procesadores">
-                        <section id="procesadores" class="mb-5">
+                        <section id="procesadores" class="mb-5 category-section">
                             <h3 class="section-title">Procesadores</h3>
                             <div class="row">
                                 <div class="col-md-6 col-lg-4">
-                                    <div class="product-card hover-effect">
+                                    <div class="product-card hover-effect" data-category="procesadores">
                                         <div class="product-badge">Más vendido</div>
                                         <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-5900x-og.jpg" alt="Procesador AMD Ryzen" class="img-fluid product-image">
                                         <div class="product-info">
@@ -263,7 +256,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                    <div class="product-card hover-effect">
+                                    <div class="product-card hover-effect" data-category="procesadores">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZx_NXODrlawtWSsMXe9j3ppqObPu3Z_5HXA&s" alt="Procesador Intel Core" class="img-fluid product-image">
                                         <div class="product-info">
                                             <h4>Intel Core i9-13900K</h4>
@@ -276,7 +269,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                    <div class="product-card hover-effect">
+                                    <div class="product-card hover-effect" data-category="procesadores">
                                         <div class="product-badge bg-danger">Oferta</div>
                                         <img src="https://images-cdn.ubuy.qa/659e96ed1dbecb65900e521d-amd-ryzen-7-7800x3d-wo-cooler-816-120.jpg" alt="Procesador AMD Ryzen 7" class="img-fluid product-image">
                                         <div class="product-info">
@@ -294,7 +287,7 @@
                         </section>
                         
 <!-- Graphics Cards Section -->
-<section id="tarjetas-graficas" class="mb-5">
+<section id="tarjetas-graficas" class="mb-5 category-section">
     <h3 class="section-title">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pci-card" viewBox="0 0 16 16">
             <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .5.5V4h13.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H2v2.5a.5.5 0 0 1-1 0V2H.5a.5.5 0 0 1-.5-.5"/>
@@ -304,60 +297,54 @@
     </h3>
     <div class="row">
         <div class="col-md-6 col-lg-4">
-            <div class="product-card hover-effect">
-                <div class="product-info"></div>
-                
-                                        <div class="product-info">
-                                            <h4>NVIDIA RTX 4080</h4>
-                                            <img src="https://m.media-amazon.com/images/I/71Z9svUyd2L._AC_SL1500_.jpg" alt="Tarjeta Gráfica NVIDIA" class="img-fluid product-image">
-                                            <p class="product-description">Tarjeta gráfica de última generación para gaming en 4K y raytracing.</p>
-                                            <div class="product-price">
-                                                <span class="price">$1,199.99</span>
-                                            </div>
-                                            <button class="btn btn-primary mt-3 w-100">Añadir al carrito</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="product-card hover-effect">
-                                       
-                                        <div class="product-info">
-                                            <h4>AMD Radeon RX 7900 XTX</h4>
-                                            <img src="https://m.media-amazon.com/images/I/61KZszvpbjL._AC_UF894,1000_QL80_.jpg" alt="Tarjeta Gráfica AMD" class="img-fluid product-image">
-                                            <p class="product-description">Potente tarjeta gráfica con 24GB GDDR6 para gaming de alto rendimiento y creación de contenido.</p>
-                                            <div class="product-price">
-                                                <span class="price">$999.99</span>
-                                            </div>
-                                            <button class="btn btn-primary mt-3 w-100">Añadir al carrito</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="product-card hover-effect">
-                                        <div class="product-info">Oferta</div>
-                                            
-                                        <div class="product-info">
-                                            <h4>NVIDIA RTX 3070 Ti</h4>
-                                           
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG3U5usd7dQ3hzrGEbTWjQWedS_rHDC3gZBA&s" alt="Tarjeta Gráfica Nvidia" class="img-fluid product-image">
-                                            <p class="product-description">Excelente relación calidad-precio para gaming en 1440p y 4K con soporte para raytracing.</p>
-                                            <div class="product-price">
-                                                <span class="price">$579.99</span>
-                                                
-                                            </div>
-                                            <button class="btn btn-primary mt-3 w-100">Añadir al carrito</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+            <div class="product-card hover-effect" data-category="tarjetas-graficas">
+                <div class="product-info">
+                    <h4>NVIDIA RTX 4080</h4>
+                    <img src="https://m.media-amazon.com/images/I/71Z9svUyd2L._AC_SL1500_.jpg" alt="Tarjeta Gráfica NVIDIA" class="img-fluid product-image">
+                    <p class="product-description">Tarjeta gráfica de última generación para gaming en 4K y raytracing.</p>
+                    <div class="product-price">
+                        <span class="price">$1,199.99</span>
+                    </div>
+                    <button class="btn btn-primary mt-3 w-100">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-card hover-effect" data-category="tarjetas-graficas">
+                <div class="product-info">
+                    <h4>AMD Radeon RX 7900 XTX</h4>
+                    <img src="https://m.media-amazon.com/images/I/61KZszvpbjL._AC_UF894,1000_QL80_.jpg" alt="Tarjeta Gráfica AMD" class="img-fluid product-image">
+                    <p class="product-description">Potente tarjeta gráfica con 24GB GDDR6 para gaming de alto rendimiento y creación de contenido.</p>
+                    <div class="product-price">
+                        <span class="price">$999.99</span>
+                    </div>
+                    <button class="btn btn-primary mt-3 w-100">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-card hover-effect" data-category="tarjetas-graficas">
+                <div class="product-badge bg-danger">Oferta</div>
+                <div class="product-info">
+                    <h4>NVIDIA RTX 3070 Ti</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG3U5usd7dQ3hzrGEbTWjQWedS_rHDC3gZBA&s" alt="Tarjeta Gráfica Nvidia" class="img-fluid product-image">
+                    <p class="product-description">Excelente relación calidad-precio para gaming en 1440p y 4K con soporte para raytracing.</p>
+                    <div class="product-price">
+                        <span class="price">$579.99</span>
+                    </div>
+                    <button class="btn btn-primary mt-3 w-100">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
                         
                         <!-- Motherboards Section -->
-                        <section id="placas-base" class="mb-5">
+                        <section id="placas-base" class="mb-5 category-section">
                             <h3 class="section-title">Placas Base</h3>
                             <div class="row">
                                 <div class="col-md-6 col-lg-4">
-                                    <div class="product-card hover-effect">
+                                    <div class="product-card hover-effect" data-category="placas-base">
                                         <div class="product-badge bg-danger">Oferta</div>
                                         <img src="https://dlcdnwebimgs.asus.com/files/media/F06BD967-FC83-4514-8AC4-760944D051CC/v2/img/kv/ROG-Strix-Z690-E-Gaming.png" alt="Placa Base ASUS" class="img-fluid product-image">
                                         <div class="product-info">
@@ -372,7 +359,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                    <div class="product-card hover-effect">
+                                    <div class="product-card hover-effect" data-category="placas-base">
                                         <img src="https://storage-asset.msi.com/global/picture/image/feature/mb/X670E/mag-x670e-tomahawk-wifi/mag-x670e-tomahawk-wifi.png" alt="Placa Base MSI" class="img-fluid product-image">
                                         <div class="product-info">
                                             <h4>MSI MAG X670E TOMAHAWK</h4>
@@ -385,7 +372,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
-                                    <div class="product-card hover-effect">
+                                    <div class="product-card hover-effect" data-category="placas-base">
                                         <div class="product-badge">Más vendido</div>
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJetaKKmusKbBJYkVfxpUdyFkQL93RdqnVg&s" alt="Placa Base Gigabyte" class="img-fluid product-image">
                                         <div class="product-info">
@@ -401,11 +388,11 @@
                             </div>
                         </section>
                        <!-- Memorias ram Section -->
-                       <section id="memoria-ram" class="mb-5">
-                        <h3 class="section-title">Memoria ram</h3>
+                       <section id="memoria-ram" class="mb-5 category-section">
+                        <h3 class="section-title">Memoria RAM</h3>
                         <div class="row">
                             <div class="col-md-6 col-lg-4">
-                                <div class="product-card hover-effect">
+                                <div class="product-card hover-effect" data-category="memoria-ram">
                                     <div class="product-badge bg-danger">Oferta</div>
                                     <img src="https://www.gskill.com/_upload/images/164016505100.png" alt="memoria ram gskill" class="img-fluid product-image">
                                     <div class="product-info">
@@ -420,25 +407,24 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <div class="product-card hover-effect">
+                                <div class="product-card hover-effect" data-category="memoria-ram">
                                     <img src="https://m.media-amazon.com/images/I/71e6YWJio-L._AC_SL1500_.jpg" alt="Memoria Ram" class="img-fluid product-image">
                                     <div class="product-info">
-                                        <h4>Corsair Vengeance RGB Pro </h4>
+                                        <h4>Corsair Vengeance RGB Pro</h4>
                                         <p class="product-description">Excelente para gaming y overclocking, con gran velocidad y diseño atractivo.</p>
                                         <div class="product-price">
-                                            <span class="price">$150</span>
+                                            <span class="price">$150.00</span>
                                         </div>
                                         <button class="btn btn-primary mt-3 w-100">Añadir al carrito</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <div class="product-card hover-effect">
+                                <div class="product-card hover-effect" data-category="memoria-ram">
                                     <div class="product-badge">Más vendido</div>
-                                    <img src="https://kcsolutions.com.do/wp-content/uploads/2024/07/Kingston-FURY-Beast-RGB-1x16GB-3600MHZ-DDR4.jpg
-                                        " alt="Placa Base Gigabyte" class="img-fluid product-image">
+                                    <img src="https://kcsolutions.com.do/wp-content/uploads/2024/07/Kingston-FURY-Beast-RGB-1x16GB-3600MHZ-DDR4.jpg" alt="Kingston Fury Beast RAM" class="img-fluid product-image">
                                     <div class="product-info">
-                                        <h4>Kingston Fury Beast </h4>
+                                        <h4>Kingston Fury Beast</h4>
                                         <p class="product-description">Equilibrio entre precio y rendimiento, ideal para PC de alto rendimiento sin gastar demasiado.</p>
                                         <div class="product-price">
                                             <span class="price">$249.99</span>
@@ -450,35 +436,30 @@
                         </div>
                     </section>
                        <!-- Almacenamiento Section -->
-                       <section id="almacenamiento" class="mb-5">
+                       <section id="almacenamiento" class="mb-5 category-section">
                         <h3 class="section-title">Almacenamiento</h3>
                         <div class="row">
                             <div class="col-md-6 col-lg-4">
-                                <div class="product-card hover-effect">
+                                <div class="product-card hover-effect" data-category="almacenamiento">
                                     <div class="product-badge bg-danger">Oferta</div>
-                                    <img src="https://m.media-amazon.com/images/I/71OWtcxKgvL.jpg
-                                        " alt="Placa Base ASUS" class="img-fluid product-image">
+                                    <img src="https://m.media-amazon.com/images/I/71OWtcxKgvL.jpg" alt="Samsung 990 Pro SSD" class="img-fluid product-image">
                                     <div class="product-info">
                                         <h4>Samsung 990 Pro</h4>
-                                        <p class="product-description">SSD NVMe de alto rendimiento con interfaz PCIe 4.0, velocidades de lectura/escritura de hasta 7,450/6,900 MB/s y excelente eficiencia energética, ideal para gaming y cargas de trabajo intensivas.
-
-                                        </p>
+                                        <p class="product-description">SSD NVMe de alto rendimiento con interfaz PCIe 4.0, velocidades de lectura/escritura de hasta 7,450/6,900 MB/s y excelente eficiencia energética, ideal para gaming y cargas de trabajo intensivas.</p>
                                         <div class="product-price">
                                             <span class="price">$90.99</span>
-                                            <span class="old-price">$150.0</span>
+                                            <span class="old-price">$150.00</span>
                                         </div>
                                         <button class="btn btn-primary mt-3 w-100">Añadir al carrito</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <div class="product-card hover-effect">
-                                    <img src="https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn850x-nvme-ssd/gallery/wd-black-sn850x-nvme-ssd-angled.png.thumb.1280.1280.png
-                                        " alt="Placa Base MSI" class="img-fluid product-image">
+                                <div class="product-card hover-effect" data-category="almacenamiento">
+                                    <img src="https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn850x-nvme-ssd/gallery/wd-black-sn850x-nvme-ssd-angled.png.thumb.1280.1280.png" alt="WD Black SN850x SSD" class="img-fluid product-image">
                                     <div class="product-info">
                                         <h4>WD Black SN850x</h4>
-                                        <p class="product-description">SSD NVMe PCIe 4.0 diseñado para gaming, con velocidades de hasta 7,300 MB/s y opciones con disipador térmico para mejorar la estabilidad en sesiones prolongadas.
-                                                                                </p>
+                                        <p class="product-description">SSD NVMe PCIe 4.0 diseñado para gaming, con velocidades de hasta 7,300 MB/s y opciones con disipador térmico para mejorar la estabilidad en sesiones prolongadas.</p>
                                         <div class="product-price">
                                             <span class="price">$329.99</span>
                                         </div>
@@ -487,12 +468,11 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <div class="product-card hover-effect">
+                                <div class="product-card hover-effect" data-category="almacenamiento">
                                     <div class="product-badge">Más vendido</div>
-                                    <img src="https://easypc.com.ph/cdn/shop/products/Crucial_P5_Plus_1TB_PCIe_Gen4_M.2_SSD-a_2048x.jpg?v=1697503998
-                                        " alt="Placa Base Gigabyte" class="img-fluid product-image">
+                                    <img src="https://easypc.com.ph/cdn/shop/products/Crucial_P5_Plus_1TB_PCIe_Gen4_M.2_SSD-a_2048x.jpg?v=1697503998" alt="Crucial P5 Plus SSD" class="img-fluid product-image">
                                     <div class="product-info">
-                                        <h4>Crucial P5 Class </h4>
+                                        <h4>Crucial P5 Plus</h4>
                                         <p class="product-description">SSD NVMe PCIe 4.0 con velocidades de hasta 6,600 MB/s, rendimiento sólido para creadores de contenido y gamers, con buen equilibrio entre velocidad y precio.</p>
                                         <div class="product-price">
                                             <span class="price">$249.99</span>
@@ -652,3 +632,9 @@
     
     <!-- Custom JavaScript -->
 	<script src="js/scriptproductos.js"></script>
+    
+    <!-- Innovative Features - Never Before Seen in Ecommerce -->
+    <script src="js/innovative-features.js"></script>
+    
+    <!-- Advanced Features - Real-time Performance & Social Proof -->
+    <script src="js/advanced-features.js"></script>
